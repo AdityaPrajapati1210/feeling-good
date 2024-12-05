@@ -1,0 +1,85 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative; /* Ensures proper positioning for pseudo-element */
+  
+}
+
+body::before {
+  content: '';
+  position: fixed; /* Ensures the background stays fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://wallpapers.com/images/hd/pink-sunset-road-f0z3nh49aaywp012.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  filter: opacity(0.9); /* Adjust the opacity of the background image */
+  z-index: -1; /* Ensures it stays behind the content */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  min-height: 400px;
+}
+
+#logo_container img {
+  border-radius: 50%;
+  height: 100px;
+  box-shadow: ;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+#main_content {
+  text-align: center;
+  color: #fff;
+}
+
+.content {
+  background-color: rgba(244, 0, 203, 0.716); /* Slight transparency for contrast */
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 10px;
+  border: 10px white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#main_content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#main_content p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+#other-account {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 37%;
+  margin-bottom: 20px;
+}
